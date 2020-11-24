@@ -14,12 +14,23 @@
 
 .sbadge{
   width:75px;
-  height:auto;
+  height:75px;
 }
+
 
 .badge-name{
   text-align:center;
 }
+
+.sub-badge{
+  width:30px;
+  height:30px;
+}
+
+.sub-name{
+  font-size:11px;
+}
+
 
 
 #intro{
@@ -50,6 +61,7 @@
 }
 
 #mirror{
+  margin-top:-1px;
   height:20vh;
 }
 .flipv{
