@@ -18,8 +18,8 @@ function setup(){
 function drip(){
   let x = Math.random()*screen.width;
   let y = Math.random()*screen.height;
-  let size = 10+(Math.random()*20)
-  let strength = size*.005
+  let size = 5+(Math.random()*10)
+  let strength = size*.002
   $('#intro').ripples("drop", x, y, size, strength)
 }
 
