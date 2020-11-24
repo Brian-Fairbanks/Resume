@@ -7,6 +7,9 @@
 #name{
   font-size: 7vw;
   font-weight: bolder;
+  margin-top:22vh;
+  padding-left:20px;
+  z-index:10;
 }
 
 .sbadge{
@@ -18,12 +21,39 @@
   text-align:center;
 }
 
-.crystal{
-  background-image:url("./Assets/back.png");
-  background-size: 100% 100%;
 
+#intro{
   height:100vh;
+  overflow: hidden;
+  background:#4E6CC2;
 }
+
+.crystal-top, .crystal-bottom{
+  z-index:1;
+  position:absolute;
+  width:100%;
+  height:20vh;
+  background-size: 100% 100%;
+}
+
+.crystal-top{
+  background-image:url("./Assets/crystalTop.png");
+  height:30vh;
+  top:0px;
+}
+
+.crystal-bottom{
+  bottom:0px;
+  background-image:url("./Assets/crystalBottom.png");
+}
+
+#mirror{
+  height:20vh;
+}
+.flipv{
+  transform: scaleY(-1);
+}
+
 
 @media screen and (min-width: 1024px) {
   #name{
