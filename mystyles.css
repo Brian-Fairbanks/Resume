@@ -25,7 +25,9 @@
 #intro{
   height:100vh;
   overflow: hidden;
-  background:#4E6CC2;
+  background:#6989e4;
+  background-image:url(./Assets/9v1yirs3.bmp);
+  background-size:cover;
 }
 
 .crystal-top, .crystal-bottom{
