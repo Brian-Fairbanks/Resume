@@ -16,11 +16,16 @@ function setup(){
 
 // Helper Functions
 function drip(){
-  let x = Math.random()*screen.width;
-  let y = Math.random()*screen.height;
-  let size = 5+(Math.random()*10)
-  let strength = size*.002
-  $('#intro').ripples("drop", x, y, size, strength)
+  let dripcount = 1+Math.floor(Math.random()*3)
+
+  for (x=0; x<dripcount; x++){
+    let x = Math.random()*screen.width;
+    let y = Math.random()*screen.height;
+    let size = 5+(Math.random()*10)
+    let strength = size*.002
+    $('#intro').ripples("drop", x, y, size, strength)
+  }
+
 }
 
 function pause(){
