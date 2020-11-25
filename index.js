@@ -1,4 +1,29 @@
+let running = true;
+
+$("#pause").on('click', function(){
+  console.log("paused");
+  running=!running;
+  if(!running){
+    resume();
+  }
+  else{
+    pause();
+  }
+
+})
+
 $( document ).ready(setup)
+
+// document.addEventListener('visibilitychange', function(){
+//   console.log(running);
+//   running=!running;
+//   if(!running){
+//     resume();
+//   }
+//   else{
+//     pause();
+//   }
+// });
 
 const rippleRes = 768;
 let dripping;
@@ -22,7 +47,7 @@ function drip(){
     let x = Math.random()*screen.width;
     let y = Math.random()*screen.height;
     let size = 5+(Math.random()*10)
-    let strength = size*.002
+    let strength = size*.02
     $('#intro').ripples("drop", x, y, size, strength)
   }
 
