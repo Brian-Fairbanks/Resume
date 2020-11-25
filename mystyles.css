@@ -68,6 +68,9 @@
   transform: scaleY(-1);
 }
 
+section{
+  margin-top:150px;
+}
 
 @media screen and (min-width: 1024px) {
   #name{
