@@ -4,7 +4,9 @@ let dripping;
 // toggle effect when clicking pause
 $("#pause").on('click', toggle)
 // and when cycling
-document.addEventListener('visibilitychange', toggle)
+document.addEventListener('visibilitychange', function(){
+  if(running){toggle}
+})
 
 // ripple effect tobble play/pause
 let running = true;
