@@ -50,6 +50,7 @@ function pause(){
   $("#intro").ripples("pause");
   // set up timer to run the ripple effect on
   clearInterval(dripping);
+  dripping=undefined;
 }
 
 function resume(){
