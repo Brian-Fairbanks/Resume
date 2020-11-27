@@ -39,6 +39,7 @@
   background:#6989e4;
   background-image:url("./Assets/reflection.png");
   background-size:cover;
+  background-position: center;
 }
 
 .crystal-top, .crystal-bottom{
