@@ -77,12 +77,25 @@
   margin-top:-1px;
   height:20vh;
 }
+
+#mirror{
+  margin-top:-1px;
+  height:20vh;
+  position:absolute;
+}
+
+.mirror-fix{
+  position: fixed!important;
+  z-index:3;
+  top: 0px;
+}
+
 .flipv{
   transform: scaleY(-1);
 }
 
 section{
-  margin-top:150px;
+  margin-top:250px;
 }
 
 #pause{

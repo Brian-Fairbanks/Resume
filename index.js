@@ -58,5 +58,28 @@ function resume(){
   dripping = setInterval(drip, 333)
 }
 
+
+
+
+/*
+================================================
+|
+|   Scroll and Stick
+|
+================================================
+*/
+var mast = $("#mirror");
+
+document.addEventListener('scroll', function(e) {
+  if (window.scrollY > window.innerHeight) {
+    mast.addClass("mirror-fix");
+  } else {
+    mast.removeClass("mirror-fix");
+  }
+  
+});
+
+
+
 // Main
 $( document ).ready(setup)
