@@ -1,5 +1,5 @@
 const rippleRes = 768;
-let dripping;
+let dripping = undefined;
 
 // toggle effect when clicking pause
 $("#pause").on('click', toggle)
@@ -55,7 +55,8 @@ function pause(){
 function resume(){
   $("#intro").ripples("play");
   // set up timer to run the ripple effect on
-  dripping = setInterval(drip, 333)
+  // if to ensure it only happens once.
+  if(!dripping){dripping = setInterval(drip, 333)};
 }
 
 
@@ -71,10 +72,15 @@ function resume(){
 var mast = $("#mirror");
 
 document.addEventListener('scroll', function(e) {
-  if (window.scrollY > window.innerHeight) {
+  if (window.scrollY > window.innerHeight) {    // this will mean you also no longer have the ripple effect on screen.  Pause it.
     mast.addClass("mirror-fix");
+    pause();
   } else {
     mast.removeClass("mirror-fix");
+    if(running){
+      resume();
+    }
+
   }
   
 });
