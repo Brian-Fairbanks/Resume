@@ -5,7 +5,14 @@ let dripping = undefined;
 $("#pause").on('click', toggle)
 // and when cycling
 document.addEventListener('visibilitychange', function(){
-  if(running){toggle}
+  if(visualViewport==false){
+    pause();
+  }
+  else {
+    if(running){
+      resume();
+    }
+  }
 })
 
 // ripple effect tobble play/pause

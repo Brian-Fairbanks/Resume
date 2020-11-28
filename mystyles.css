@@ -54,7 +54,7 @@
   background-position: center;
 }
 
-.crystal-top, .crystal-bottom{
+.crystal-top, .crystal-bottom, .crystal-nav {
   z-index:1;
   position:absolute;
   width:100%;
@@ -73,14 +73,20 @@
   background-image:url("./Assets/crystalBottom.png");
 }
 
-#mirror{
-  margin-top:-1px;
-  height:20vh;
+.crystal-nav{
+  bottom:0px;
+  background-image:url("./Assets/crystal-mirror.png");
+}
+
+.flipv{
+  height:100%;
+  transform: scaleY(-1);
 }
 
 #mirror{
   margin-top:-1px;
-  height:20vh;
+  height:10vh;
+  min-height:60px;
   position:absolute;
 }
 
@@ -90,8 +96,26 @@
   top: 0px;
 }
 
-.flipv{
-  transform: scaleY(-1);
+
+
+#navbar{
+  height:6vh;
+  min-height:40px;
+  z-index:11;
+  position:absolute;
+}
+
+.nav-brand{
+  margin-left:20px;
+  padding:3px;
+  height:100%;
+  width:auto;
+}
+
+.nav-item, .nav-item a{
+  font-weight: 900;
+  color:#243053;
+  text-shadow:1px 1px #fff;
 }
 
 section{
