@@ -136,6 +136,17 @@
   font-weight: 1000;
   color:#243053;
   text-shadow:1px 1px 0px #fff, -1px -1px 0px #fff;
+  border:1px rgba(0,0,0,0);
+  border-radius:10px;
+  padding:0px 20px 0px 20px;
+}
+
+.active{
+  border:1px solid #fff;
+  background-color:rgba(255,255,255,.4);
+}
+.active a{
+  color:#5e6c97 !important;
 }
 
 

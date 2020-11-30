@@ -79,19 +79,65 @@ function resume(){
 */
 var mast = $("#mirror");
 
+let navPosition = window.scrollY;
+let skillsSection = $("#skills").offset().top-250;
+let projectsSection = $("#projects").offset().top-250;
+let expSection = $("#experience").offset().top-250;
+let resumeSection = $("#resume").offset().top-250;
+
+
 document.addEventListener('scroll', function(e) {
-  if (window.scrollY > window.innerHeight) {    // this will mean you also no longer have the ripple effect on screen.  Pause it.
+  navPosition = window.scrollY;
+
+  
+  if (navPosition > window.innerHeight) { // if you are past the main intro...
+    // pin the nav bar to the top of the screen
     mast.addClass("mirror-fix");
+    // this will mean you also no longer have the ripple effect on screen.  Pause it.
     pause();
-  } else {
+
+    // Highlights current page
+    if(navPosition > resumeSection){
+      $(".nav-item").removeClass("active");
+      $("#nav-resume").addClass("active");
+    }
+    else if(navPosition > expSection){
+      $(".nav-item").removeClass("active");
+      $("#nav-experience").addClass("active");
+    }
+    else if(navPosition > projectsSection){
+      $(".nav-item").removeClass("active");
+      $("#nav-projects").addClass("active");
+    }
+    else if(navPosition > skillsSection){
+      $(".nav-item").removeClass("active");
+      $("#nav-skills").addClass("active");
+    }
+  }
+  // when the main intro is on screen...
+  else {
+    // let the nav bar stick under the intro
     mast.removeClass("mirror-fix");
+    $(".nav-item").removeClass("active");
+    // and resume the ripple effect if it is not manually paused
     if(running){
       resume();
     }
 
   }
+
+
   
 });
+
+
+function getSectionPos(){
+  navPosition = window.scrollY;
+  skillsSection = $("#skills").offset().top;
+  projectsSection = $("#projects").offset().top;
+  expSection = $("#experience").offset().top;
+  resumeSection = $("#resume").offset().top;
+}
 
 
 
