@@ -39,7 +39,7 @@
   <div id="mirror" class="container-fluid p-0">
     <div class="crystal-nav flipv"></div>
     <div id="navbar" class="container-fluid row p-0">
-      <img  src="Assets/logo.svg" class="d-none d-sm-block nav-brand">
+      <img src="Assets/logo.svg" class="d-none d-sm-block nav-brand">
 
       <ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-center flex-grow-1">
         <li class="nav-item">
@@ -155,7 +155,7 @@
                 <img src="./Assets/Badges/react.svg" class="sbadge">
                 <p class="badge-name">React</p>
               </div>
-              
+
               <div>
                 <img src="./Assets/Badges/asp.png" class="sbadge">
                 <p class="badge-name">ASP.NET</p>
@@ -243,7 +243,7 @@
                 <img src="./Assets/Badges/servicenow.svg" class="sbadge">
                 <p class="badge-name">Service Now</p>
               </div>
-              
+
               <div>
                 <img src="./Assets/Badges/git.svg" class="sbadge">
                 <p class="badge-name">Git</p>
@@ -277,139 +277,411 @@
   </section>
 
 
-
   <!--
+      ================================================================================
+      |  
+      |  Projects
+      |
+      ================================================================================
+      -->
+
+  <section>
+    <!--Row 1 - main
+                This box will be the only one that changes between the different files-->
+    <article class="m-0 mt-sm-3 mb-sm-3">
+      <div class="container content pt-3 pb-3">
+        <!-- main-->
+
+
+        <!-- Portfolio grid - set up as a single card per row, or a 2x grid when above md -->
+        <div id="portfolio-well" class="row m-auto">
+          <!-- Monster-Farm -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/combat.PNG" alt="D&D character creator">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Combat
+                </div>
+              </div>
+              <div class="card-body">
+                The beginings of a DND character creation, made with Tailwind, React, Node, and MongoDB.
+                User creation and character sheet working, with hopes of creating and referencing user-made feats,
+                monsters, items, ect.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/combat">GitHub Repository</a> |
+                <a target="_blank" href="https://pure-headland-53064.herokuapp.com/character">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Monster-Farm -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/monster-world.png"
+                    alt="Single chhunk of terrain, meshed, and shaded">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Monster-World
+                </div>
+              </div>
+              <div class="card-body">
+                A web based Phaser game, developed in Javascript, with a few former classmates in an attempt to better
+                learn class creation,
+                and how to handle large data storage and web interactions.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/aroblesgalit/monster-world">GitHub Repository</a> |
+                <a target="_blank" href="https://monster-world.herokuapp.com/game">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dice Rollerz -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/diceRollerz.PNG"
+                    alt="Single chhunk of terrain, meshed, and shaded">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Dice-Rollerz
+                </div>
+              </div>
+              <div class="card-body">
+                A full-stack MERN project, implementing Socket.io for a real time, instant chat client.
+                Made to help with fellow D&D players, cooped up in their houses and unable to join their
+                friends in person for tabletop gaming.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/DiceRollerz">GitHub
+                  Repository</a> |
+                <a target="_blank" href="https://dice-rollerz.herokuapp.com/">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- W4 -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/w4logo.PNG" alt="W4 Portfolio">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Watch What Where When
+                </div>
+              </div>
+              <div class="card-body">
+                W4 is a Movie and TV show tacking app, which allows you to search out movies and tv
+                shows, gleam information about them, and add them to a personalized watchlist for
+                registered users.
+                User views for each content are logged, sorted, and added to the trending main page.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/TV-Tracker">GitHub
+                  Repository</a> |
+                <a target="_blank" href="https://wfourbkf.herokuapp.com/">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/soundThis.png" alt="SoundThis Landing Page">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  SoundThis
+                </div>
+              </div>
+              <div class="card-body">
+                Implementation of multiple different Restful APIs to search for artist/group info,
+                Albums, Shows, and related artists.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/SoundThis">GitHub
+                  Repository</a> |
+                <a target="_blank" href="https://brian-fairbanks.github.io/SoundThis/">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 1 -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/procTerGen.jpg"
+                    alt="Single chhunk of terrain, meshed, and shaded">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Endless Terrain Generator
+                </div>
+              </div>
+              <div class="card-body">
+                A Unity project, developed in c#, to generate a land mass mesh based on multiple passes
+                of perlin noise, which will grab new chunks as needed to generate an endless terrain.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/Procedural-Terrain-Test">GitHub
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 - Coding Quiz -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/quizGame.PNG" alt="Quiz Game screenshot">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Quiz Game
+                </div>
+              </div>
+              <div class="card-body">
+                A JavaScript coding quiz, tracking answers given for a review, and implementing local
+                storage to save and load high scores
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/QuizGame">GitHub
+                  Repository</a> |
+                <a target="_blank" href="https://brian-fairbanks.github.io/QuizGame/">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather Dashboard -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/weatherDashboard.PNG"
+                    alt="Weather Dashboard screenshot">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Weather Dashboard
+                </div>
+              </div>
+              <div class="card-body">
+                A Javascript Restful API project to pull the current and forcasted weather for any given
+                city, along with local storage saving/loading past searches.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/WeatherDashboard">GitHub
+                  Repository</a> |
+                <a target="_blank" href="https://brian-fairbanks.github.io/WeatherDashboard/">Hosted
+                  Link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Employee Directory -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/directory.png" alt="Weather Dashboard screenshot">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Employee Directory
+                </div>
+              </div>
+              <div class="card-body">
+                A React powered Employee Directory. It allows a user to view their entire staff, as well
+                as sort and filter to more easily find the information that they are searching for.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/ReactEmployeeDir">GitHub
+                  Repository</a> |
+                <a target="_blank" href="https://brian-fairbanks.github.io/ReactEmployeeDir/">Hosted
+                  Link</a>
+              </div>
+            </div>
+          </div>
+
+  </section>
+
+
+
+    <!--
       ================================================================================
       |  
       |  Experience
       |
       ================================================================================
       -->
-  <section>
-    <div class="container row mx-auto p-0 justify-content-around">
-      <!-- Employment Card Template-->
-
-      <!-- <div class="card h-100">
-          <div class="card-header">
-              Featured
+      <section>
+        <div class="container row mx-auto p-0 justify-content-around">
+          <!-- Employment Card Template-->
+    
+          <!-- <div class="card h-100">
+              <div class="card-header">
+                  Featured
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div> -->
+    
+          <!-- Dell -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-2">
+            <div class="card h-100">
+              <div class="card-header orange">
+                <span class="float-left text-light">
+                  Dell Technologies
+                </span>
+                <span class="float-right text-light">
+                  2015-2020
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Senior Business System Analyst</h5>
+                <p class="card-text">
+                <ul>
+                  <li>
+                    Handled mission critical technical support for supply chain tools, including Glovia, OTM and
+                    GTM (Oracle & Global Transportation Management) through Oracle databases, and their
+                    dependent web portals
+                  </li>
+                  <li>
+                    Managed documentation and oversaw disaster recovery operations for Dell’s Supply Chain Data
+                    Hub, primary supply chain database managing data flow for dozens of applications
+                  </li>
+                  <li>
+                    Aided in creation and management of proactive alerts and monitoring, leading to a decrease of
+                    user logged incidents to only 20%
+                  </li>
+    
+                </ul>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+          <!-- South Plains -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-2">
+            <div class="card h-100">
+              <div class="card-header orange">
+                <span class="float-left text-light">
+                  South Plains Electric Co-op
+                </span>
+                <span class="float-right text-light">
+                  2013-2015
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">IT Generalist, Part-Time</h5>
+                <p class="card-text">
+                <ul>
+                  <li>
+                    Designed and executed migration of legacy power consumption tracking forms from
+                    Lotus 1-2-3 to Excel using VBA
+                  </li>
+                  <li>
+                    Designed, wrote, and managed web-based employee time-off and visitor check-in applications
+                  </li>
+                  <li>
+                    Aided in employee system provisioning, installation, and maintenance for approximately 200 personnel
+                    across 3 sites
+                  </li>
+    
+                </ul>
+                </p>
+              </div>
+            </div>
           </div>
-      </div> -->
-
-      <!-- Dell -->
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-2">
-        <div class="card h-100">
-          <div class="card-header orange">
-            <span class="float-left text-light">
-              Dell Technologies
-            </span>
-            <span class="float-right text-light">
-              2015-2020
-            </span>
+    
+          <!-- Dell Internship -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-2">
+            <div class="card h-100">
+              <div class="card-header orange">
+                <span class="float-left text-light">
+                  Dell Technologies
+                </span>
+                <span class="float-right text-light">
+                  2013
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Supply Chain Software Development Intern</h5>
+                <p class="card-text">
+                <ul>
+                  <li>
+                    Created data retrieval tool on the department’s web portal, saving team members hours each
+                    week on collecting and formatting reports
+    
+                  </li>
+                  <li>
+                    Gathered and translated business requirements into technical specifications to organize and
+                    prioritize backlogged manufacturing orders, based on ship date, quantity, and product type
+    
+                  </li>
+                  <li>
+                    Used MVC3 and Transact-SQL databases, under the guidance of a technical mentor, to
+                    develop a web-based tool for the internal team to identify, monitor, and report on problem orders
+                    from a set number of Dell’s manufacturing partners. Team later expanded the tool and rolled out
+                    to all global production regions
+                  </li>
+    
+                </ul>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Senior Business System Analyst</h5>
-            <p class="card-text">
-            <ul>
-              <li>
-                Handled mission critical technical support for supply chain tools, including Glovia, OTM and
-                GTM (Oracle & Global Transportation Management) through Oracle databases, and their
-                dependent web portals
-              </li>
-              <li>
-                Managed documentation and oversaw disaster recovery operations for Dell’s Supply Chain Data
-                Hub, primary supply chain database managing data flow for dozens of applications
-              </li>
-              <li>
-                Aided in creation and management of proactive alerts and monitoring, leading to a decrease of
-                user logged incidents to only 20%
-              </li>
-
-            </ul>
-            </p>
-          </div>
+    
+    
         </div>
-      </div>
+    
+      </section>
 
-      <!-- South Plains -->
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-2">
-        <div class="card h-100">
-          <div class="card-header orange">
-            <span class="float-left text-light">
-              South Plains Electric Co-op
-            </span>
-            <span class="float-right text-light">
-              2013-2015
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">IT Generalist, Part-Time</h5>
-            <p class="card-text">
-            <ul>
-              <li>
-                Designed and executed migration of legacy power consumption tracking forms from
-                Lotus 1-2-3 to Excel using VBA
-              </li>
-              <li>
-                Designed, wrote, and managed web-based employee time-off and visitor check-in applications
-              </li>
-              <li>
-                Aided in employee system provisioning, installation, and maintenance for approximately 200 personnel
-                across 3 sites
-              </li>
-
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dell Internship -->
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 p-2">
-        <div class="card h-100">
-          <div class="card-header orange">
-            <span class="float-left text-light">
-              Dell Technologies
-            </span>
-            <span class="float-right text-light">
-              2013
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Supply Chain Software Development Intern</h5>
-            <p class="card-text">
-            <ul>
-              <li>
-                Created data retrieval tool on the department’s web portal, saving team members hours each
-                week on collecting and formatting reports
-
-              </li>
-              <li>
-                Gathered and translated business requirements into technical specifications to organize and
-                prioritize backlogged manufacturing orders, based on ship date, quantity, and product type
-
-              </li>
-              <li>
-                Used MVC3 and Transact-SQL databases, under the guidance of a technical mentor, to
-                develop a web-based tool for the internal team to identify, monitor, and report on problem orders
-                from a set number of Dell’s manufacturing partners. Team later expanded the tool and rolled out
-                to all global production regions
-              </li>
-
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-  </section>
+  <!--
+      ================================================================================
+      |  
+      |  Resume
+      |
+      ================================================================================
+      -->
+      <section>
 
   <div class="employment-card card mt-auto text-center p-3">
     <a target="_blank" href="Assets/Brian_Fairbanks_resume_010_28_2020.pdf" download>
@@ -418,8 +690,12 @@
     </a>
   </div>
 
-
-  </div>
+</section>
+  <footer class="mastfoot orange mt-auto pt-2">
+    <section class="inner text-center brown text-light p-3">
+        <h6>&copy; Copyright 2020</h6>
+    </section>
+  </footer> 
 
 
   <!-- Import Scripts  -->
