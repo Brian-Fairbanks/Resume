@@ -1,4 +1,10 @@
-const rippleRes = 768;
+/*
+================================================
+|
+|   Ripple Effect
+|
+================================================
+*/const rippleRes = 768;
 let dripping = undefined;
 
 // toggle effect when clicking pause
@@ -67,9 +73,6 @@ function resume(){
   if(!dripping){dripping = setInterval(drip, 333)};
 }
 
-
-
-
 /*
 ================================================
 |
@@ -80,9 +83,9 @@ function resume(){
 var mast = $("#mirror");
 
 let navPosition = window.scrollY;
-let skillsSection = $("#skills").offset().top-250;
-let projectsSection = $("#projects").offset().top-250;
-let expSection = $("#experience").offset().top-250;
+let skills = $("#skills").offset().top-250;
+let projects = $("#projects").offset().top-250;
+let experience = $("#experience").offset().top-250;
 let resumeSection = $("#resume").offset().top-250;
 
 
@@ -101,15 +104,15 @@ document.addEventListener('scroll', function(e) {
       $(".nav-item").removeClass("active");
       $("#nav-resume").addClass("active");
     }
-    else if(navPosition > expSection){
+    else if(navPosition > experience){
       $(".nav-item").removeClass("active");
       $("#nav-experience").addClass("active");
     }
-    else if(navPosition > projectsSection){
+    else if(navPosition > projects){
       $(".nav-item").removeClass("active");
       $("#nav-projects").addClass("active");
     }
-    else if(navPosition > skillsSection){
+    else if(navPosition > skills){
       $(".nav-item").removeClass("active");
       $("#nav-skills").addClass("active");
     }
@@ -133,13 +136,30 @@ document.addEventListener('scroll', function(e) {
 
 function getSectionPos(){
   navPosition = window.scrollY;
-  skillsSection = $("#skills").offset().top;
-  projectsSection = $("#projects").offset().top;
-  expSection = $("#experience").offset().top;
-  resumeSection = $("#resume").offset().top;
+  skills = $("#skills").offset().top-250;
+  projects = $("#projects").offset().top-250;
+  experience = $("#experience").offset().top-250;
+  resumeSection = $("#resume").offset().top-250;
 }
 
+// reset anchor breakpoints whenever the screen resizes
+$(window).resize(getSectionPos);
 
+/*
+================================================
+|
+|   Scroll to Nav Links
+|
+================================================
+*/
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top-240
+  }, 500);
+});
 
 // Main
 $( document ).ready(setup)
