@@ -12,7 +12,6 @@ $("#pause").on('click', toggle)
 // and when cycling
 document.addEventListener('visibilitychange', function(){
   if(document.visibilityState === 'hidden'){
-    pausing
     pause();
   }
   else {
