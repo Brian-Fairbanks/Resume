@@ -17,24 +17,6 @@
 /*===================================
 |   Skill Badges
 =====================================*/
-#name{
-  font-size: 7vw;
-  font-weight: bolder;
-  margin-top:22vh;
-  padding-left:20px;
-  z-index:10;
-  text-shadow: 0 20px 15px rgba(0,0,0,.7);
-}
-
-#logo-shadow{
-  margin-top:-95px;
-  opacity:40%;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
 
 .sbadge{
   width:75px;
@@ -112,6 +94,29 @@
   top: 0px;
 }
 
+
+#name{
+  font-size: 7vw;
+  font-weight: bolder;
+  margin-top:22vh;
+  padding-left:20px;
+  z-index:10;
+  text-shadow: 0 20px 15px rgba(0,0,0,.7);
+}
+
+#logo-shadow{
+  margin-top:-110px;
+  opacity:40%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.logo{
+  width:auto;
+  height:150px;
+}
 
 /*===================================
 |   Nav Bar
