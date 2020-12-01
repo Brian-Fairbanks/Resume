@@ -11,7 +11,8 @@ let dripping = undefined;
 $("#pause").on('click', toggle)
 // and when cycling
 document.addEventListener('visibilitychange', function(){
-  if(visualViewport==false){
+  if(document.visibilityState === 'hidden'){
+    pausing
     pause();
   }
   else {
