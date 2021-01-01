@@ -296,9 +296,33 @@
       <div class="container row mx-auto p-0 justify-content-around">
         <!-- main-->
 
-
         <!-- Portfolio grid - set up as a single card per row, or a 2x grid when above md -->
         <div id="portfolio-well" class="row m-auto">
+          <!-- Monster-Farm -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/100days.jpg" alt="100 days of code page">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  100 Days - 100 Projects
+                </div>
+              </div>
+              <div class="card-body">
+                Each day, I create a new project primarily working with Native Javascript, and CSS.
+                This is a secondary portfolio page with all the projects I make each day.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/100-days">GitHub Repository</a> |
+                <a target="_blank" href="https://brian-fairbanks.github.io/100-days/">Hosted Link</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Monster-Farm -->
           <div class="col-sm-12 col-md-6 col-xl-4 p-3">
             <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
@@ -703,14 +727,15 @@
         </a>
       </div>
 
-    <!-- Testemonial -->
+      <!-- Testemonial -->
       <div class="card d-flex flex-column flex-sm-row">
 
-        <div class="test-header d-flex flex-column container-fluid bg-dark justify-content-center text-light text-center">
+        <div
+          class="test-header d-flex flex-column container-fluid bg-dark justify-content-center text-light text-center">
           <img src="Assets/alvin.jpg" class="test-image rounded-circle mx-auto">
           <p class="h3">
             <a href="https://www.linkedin.com/in/aroblesgalit/">
-            Alvin Galit
+              Alvin Galit
             </a>
           </p>
           <p>Web Developer and Graphics Designer</p>
@@ -718,13 +743,18 @@
 
         <div class="p-3 flex-grow-2 ">
           <i class="fas fa-quote-left text-blue"></i>
-          <span class="inline-block">I had the opportunity of working with Brian during our time in the coding boot camp. His knowledge is vast and extensive, and he constantly amazed me with his ability to quickly grasp the materials. Brian was always willing to help those around him including myself, which has definitely taught me a lot. He is a reliable, forward thinking, and an intelligent Full Stack Developer. I have constantly felt Brian was one of the most skilled individuals in our cohort. Certainly someone I'd want to to have on my team</span>
+          <span class="inline-block">I had the opportunity of working with Brian during our time in the coding boot
+            camp. His knowledge is vast and extensive, and he constantly amazed me with his ability to quickly grasp the
+            materials. Brian was always willing to help those around him including myself, which has definitely taught
+            me a lot. He is a reliable, forward thinking, and an intelligent Full Stack Developer. I have constantly
+            felt Brian was one of the most skilled individuals in our cohort. Certainly someone I'd want to to have on
+            my team</span>
           <i class="fas fa-quote-right text-blue"></i>
         </div>
-        
+
       </div>
     </div>
-    
+
 
     <!--Grid column for My information -->
     <div class="row d-flex flex-row justify-content-center align-items-end text-center py-5">
