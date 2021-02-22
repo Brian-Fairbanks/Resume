@@ -298,7 +298,33 @@
 
         <!-- Portfolio grid - set up as a single card per row, or a 2x grid when above md -->
         <div id="portfolio-well" class="row m-auto">
-          <!-- Monster-Farm -->
+
+          <!-- Chatta -->
+          <div class="col-sm-12 col-md-6 col-xl-4 p-3">
+            <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+            <div class="card h-100 shadow">
+              <div class="port-card card-img-top p-0 m-0">
+                <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                <div style="height:200px;" class="w-100 verflow-hidden">
+                  <img class="img-fluid w-100" src="./Assets/Projects/chatta.png" alt="Chatta Image">
+                  <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                </div>
+                <div class="port-text position-relative text-center text-light shadow-sm">
+                  Chatta
+                </div>
+              </div>
+              <div class="card-body">
+                This is a second attempt at a chat application.  It still uses mern, but I developed everything myself this time.
+                I have vastly improved on the scalability, logging in with multiple devices, and security.
+              </div>
+              <div class="card-footer text-center brown text-light">
+                <a target="_blank" href="https://github.com/Brian-Fairbanks/Chatta">GitHub Repository</a>
+                <!-- <a target="_blank" href="https://brian-fairbanks.github.io/100-days/">Hosted Link</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 100 Days -->
           <div class="col-sm-12 col-md-6 col-xl-4 p-3">
             <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
             <div class="card h-100 shadow">
